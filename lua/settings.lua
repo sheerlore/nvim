@@ -1,4 +1,5 @@
 vim.cmd('autocmd!')
+vim.cmd [[colorscheme nord]]
 
 vim.scriptencoding = 'utf-8'
 vim.opt.encoding = 'utf-8'
@@ -35,3 +36,4 @@ vim.cmd([[let &t_Ce = "\e[4:0m"]])
 
 vim.opt.formatoptions:append { 'r' }
 vim.opt.clipboard="unnamed"
+
