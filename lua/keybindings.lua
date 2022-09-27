@@ -24,10 +24,12 @@ keymap.set('n', 'sh', '<C-w>h')
 keymap.set('n', 'sk', '<C-w>k')
 keymap.set('n', 'sj', '<C-w>j')
 keymap.set('n', 'sl', '<C-w>l')
+-- Move tab
+keymap.set('n', '<C-h>', '<cmd>tabprevious<CR>')
+keymap.set('n', '<C-l>', '<cmd>tabnext<CR>')
 
 -- Resize window
 keymap.set('n', '<C-w><left>', '<C-w><')
 keymap.set('n', '<C-w><right>', '<C-w>>')
 keymap.set('n', '<C-w><up>', '<C-w>+')
 keymap.set('n', '<C-w><down>', '<C-w>-')
-
