@@ -23,17 +23,18 @@ vim.opt.smarttab = true
 vim.opt.breakindent = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
-vim.opt.autoindent = true 
-vim.opt.smartindent = true 
+vim.opt.smartindent = true
 vim.opt.wrap = false
 vim.opt.backspace = 'start,eol,indent'
 vim.opt.path:append { '**' } -- Finding files - Search down into subfolders
 vim.opt.wildignore:append { '*/node_modules/*' }
+vim.opt.swapfile = false
+vim.opt.autoread = true
+vim.opt.list = true
 
 -- Undercurl
 vim.cmd([[let &t_Cs = "\e[4:3m"]])
 vim.cmd([[let &t_Ce = "\e[4:0m"]])
 
 vim.opt.formatoptions:append { 'r' }
-vim.opt.clipboard="unnamed"
-
+vim.opt.clipboard = "unnamed"

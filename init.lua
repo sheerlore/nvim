@@ -1,4 +1,3 @@
-
 require('plugins')
 
 require('settings')
@@ -6,4 +5,3 @@ require('settings')
 require('keybindings')
 
 require('highlights')
-
