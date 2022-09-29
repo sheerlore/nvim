@@ -37,4 +37,12 @@ vim.cmd([[let &t_Cs = "\e[4:3m"]])
 vim.cmd([[let &t_Ce = "\e[4:0m"]])
 
 vim.opt.formatoptions:append { 'r' }
-vim.opt.clipboard = "unnamed"
+
+-- netrw
+vim.api.nvim_set_var("netrw_liststyle", 3)
+vim.api.nvim_set_var("netrw_keepdir", 0)
+vim.api.nvim_set_var("netrw_winsize", 25)
+
+vim.api.nvim_set_var("netrw_sizestyle", "H")
+vim.api.nvim_set_var("netrw_timefmt", "%Y/%m/%d(%a) %H:%M:%S")
+vim.api.nvim_set_var("netrw_preview", 1)

@@ -3,4 +3,4 @@ return function()
   config.options.theme = 'nord'
 
   require('lualine').setup(config)
-end 
+end
