@@ -1,5 +1,5 @@
 vim.cmd('autocmd!')
-vim.cmd [[colorscheme nord]]
+vim.cmd [[colorscheme nightfox]]
 
 vim.scriptencoding = 'utf-8'
 vim.opt.encoding = 'utf-8'

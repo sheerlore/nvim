@@ -33,3 +33,9 @@ keymap.set('n', '<C-w><left>', '<C-w><')
 keymap.set('n', '<C-w><right>', '<C-w>>')
 keymap.set('n', '<C-w><up>', '<C-w>+')
 keymap.set('n', '<C-w><down>', '<C-w>-')
+
+-- Telescope
+keymap.set('n', 'ff', '<cmd>Telescope find_files<CR>')
+keymap.set('n', 'fg', '<cmd>Telescope live_grep<CR>')
+keymap.set('n', 'fb', '<cmd>Telescope buffers<CR>')
+keymap.set('n', 'fh', '<cmd>Telescope help_tags<CR>')
