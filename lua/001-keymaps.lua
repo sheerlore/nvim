@@ -14,11 +14,6 @@ local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 local expr = { noremap = true, silent = true, expr = true }
 
--- Map leader key to space
-map("n", "<Space>", "<Nop>", opts)
-vim.g.mapleadr = " "
-vim.g.maplocalleader = " "
-
 -- Don't jump when using *
 map("n", "*", "<C-o>", opts)
 
