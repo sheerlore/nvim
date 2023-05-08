@@ -8,7 +8,7 @@ require("mason").setup({
   }
 })
 
-require("mason-lspconfig").setup()
+-- require("mason-lspconfig").setup()
 require("mason-lspconfig").setup_handlers({ function(server)
   local opt = {
     on_attach = function(client, bufnr)

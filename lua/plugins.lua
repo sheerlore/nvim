@@ -1,6 +1,12 @@
+local status, packer = pcall(require, "packer")
+if (not status) then
+  print("Packer is not installed")
+  return
+end
+
 vim.cmd [[packadd packer.nvim]]
 
-return require('packer').startup(function(use)
+packer.startup(function(use)
   -- Packer can manage itself
   use { 'wbthomason/packer.nvim', opt = true }
   use 'folke/tokyonight.nvim'
@@ -10,7 +16,7 @@ return require('packer').startup(function(use)
   }
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.1',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = { { 'nvim-lua/plenary.nvim' } }
   }
 
   -- lsp & server
@@ -22,6 +28,4 @@ return require('packer').startup(function(use)
   use "hrsh7th/nvim-cmp"
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/vim-vsnip"
-
 end)
-
