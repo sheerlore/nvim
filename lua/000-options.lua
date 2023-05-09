@@ -12,7 +12,7 @@ vim.opt.hidden = true
 -- メニューとコマンド
 vim.opt.wildmenu = true
 vim.opt.cmdheight = 2
-vim.opt.laststatus= 2
+vim.opt.laststatus = 2
 vim.opt.showcmd = true
 
 -- カラースキーム
@@ -21,15 +21,15 @@ vim.opt.background = "dark"
 
 -- インデント
 vim.opt.shiftwidth = 0
-vim.opt.tabstop = 2 
-vim.opt.softtabstop = 2 
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
 vim.opt.expandtab = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 
 -- 表示
 vim.opt.number = true
-vim.opt.relativenumber = true  -- ex) 10j 5yk 
+vim.opt.relativenumber = true -- ex) 10j 5yk
 vim.opt.wrap = false
 vim.opt.showtabline = 2
 vim.opt.showmatch = true
@@ -55,4 +55,3 @@ vim.opt.showmode = false
 vim.opt.updatetime = 300
 vim.opt.shortmess:append("c")
 vim.opt.encoding = "utf-8"
-
