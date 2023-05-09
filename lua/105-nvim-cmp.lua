@@ -1,3 +1,5 @@
+local lspkind = require("lspkind")
+
 local status, cmp = pcall(require, "cmp")
 if (not status) then return end
 
@@ -9,8 +11,9 @@ cmp.setup({
   },
   sources = {
     { name = "nvim_lsp" },
-    -- { name = "buffer" },
-    -- { name = "path" },
+    { name = "vsnip" },
+    { name = "buffer" },
+    { name = "path" },
   },
   mapping = cmp.mapping.preset.insert({
     ["<C-p>"] = cmp.mapping.select_prev_item(),
@@ -22,4 +25,11 @@ cmp.setup({
   experimental = {
     ghost_text = true,
   },
+  formatting = {
+    format = lspkind.cmp_format({
+      mode = 'symbol',
+      maxwidth = 50,
+      ellipsis_char = '...'
+    })
+  }
 })

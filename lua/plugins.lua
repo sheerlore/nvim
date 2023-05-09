@@ -34,8 +34,17 @@ return require("packer").startup(function(use)
   -- cmp
   use "hrsh7th/nvim-cmp"
   use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-buffer"
+  use "hrsh7th/cmp-path"
   use "hrsh7th/vim-vsnip"
+  use "hrsh7th/cmp-vsnip"
+  use "onsails/lspkind.nvim"
 
+  -- other
+  use {
+    "windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  }
 
   if packer_bootstrap then
     require('packer').sync()
