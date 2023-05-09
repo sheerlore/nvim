@@ -14,8 +14,6 @@ local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 local expr = { noremap = true, silent = true, expr = true }
 
--- Don't jump when using *
-map("n", "*", "<C-o>", opts)
 
 -- Toggle NetRjjks (Lexplore)
 map("n", "<Leader>le", ":Lex 30<Cr>", opts)

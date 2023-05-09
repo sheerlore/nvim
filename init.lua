@@ -10,6 +10,7 @@ require('102-telescope')
 require('103-nvim-lspconfig')
 require('104-mason')
 require('105-nvim-cmp')
+require('106-nvim-notify')
 
 
 vim.cmd [[colorscheme tokyonight-night]]

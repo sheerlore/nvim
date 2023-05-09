@@ -28,14 +28,6 @@ return require("packer").startup(function(use)
     'nvim-telescope/telescope.nvim', tag = '0.1.1',
     requires = { 'nvim-lua/plenary.nvim' }
   }
-  -- file explorer
-  use {
-    "nvim-tree/nvim-tree.lua",
-    requires = {
-      "nvim-tree/nvim-web-devicons"
-    },
-    config = function() require("nvim-tree").setup {} end
-  }
 
   -- lsp & server
   use 'neovim/nvim-lspconfig'
@@ -61,6 +53,7 @@ return require("packer").startup(function(use)
     "j-hui/fidget.nvim",
     config = function() require("fidget").setup {} end
   }
+  use "rcarriga/nvim-notify"
 
   if packer_bootstrap then
     require('packer').sync()
