@@ -16,14 +16,25 @@ vim.cmd [[packadd packer.nvim]]
 return require("packer").startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
+  -- color theme
   use 'folke/tokyonight.nvim'
+  -- status line
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
+  -- fuzzy finder
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.1',
     requires = { 'nvim-lua/plenary.nvim' }
+  }
+  -- file explorer
+  use {
+    "nvim-tree/nvim-tree.lua",
+    requires = {
+      "nvim-tree/nvim-web-devicons"
+    },
+    config = function() require("nvim-tree").setup {} end
   }
 
   -- lsp & server

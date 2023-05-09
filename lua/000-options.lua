@@ -45,6 +45,10 @@ vim.opt.hlsearch = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
+-- netrw
+vim.g.netrw_banner = 0
+vim.g.netrw_liststyle = 3
+
 
 -- その他
 vim.opt.splitright = true
