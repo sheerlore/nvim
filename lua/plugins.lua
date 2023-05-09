@@ -23,7 +23,7 @@ return require("packer").startup(function(use)
   }
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.1',
-    requires = { { 'nvim-lua/plenary.nvim' } }
+    requires = { 'nvim-lua/plenary.nvim' }
   }
 
   -- lsp & server
@@ -44,6 +44,10 @@ return require("packer").startup(function(use)
   use {
     "windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
+  }
+  use {
+    "j-hui/fidget.nvim",
+    config = function() require("fidget").setup {} end
   }
 
   if packer_bootstrap then
