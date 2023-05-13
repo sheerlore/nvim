@@ -11,6 +11,7 @@ require('103-nvim-lspconfig')
 require('104-mason')
 require('105-nvim-cmp')
 require('106-nvim-notify')
+require('107-bufferline')
 
 
 vim.cmd [[colorscheme tokyonight-night]]

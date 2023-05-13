@@ -1,13 +1,15 @@
 local status, notify = pcall(require, 'notify')
 if (not status) then return end
 
+vim.notify = notify
+
 notify.setup {
   background_colour = "#000000",
   stages = "slide",
   timeout = 5000,
-  max_width = 80,
 }
 
+-- When Opening Nvim 
 notify([[
 　　　　|┃三　　　　 ∩＿＿＿∩
 　　　　|┃　　　　　| ノ　　　ヽ
