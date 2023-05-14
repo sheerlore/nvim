@@ -1,4 +1,5 @@
 -- keyboard shortcut
+local opts = { noremap = true, silent = true }
 vim.keymap.set('n', 'ge', vim.diagnostic.open_float, opts)
 vim.keymap.set('n', 'g]', vim.diagnostic.goto_next, opts)
 vim.keymap.set('n', 'g[', vim.diagnostic.goto_prev, opts)
@@ -32,6 +33,18 @@ require("mason-lspconfig").setup_handlers({ function(server_name)
     vim.keymap.set('n', 'ga', vim.lsp.buf.code_action, bufopts)
   end
   opts.capabilities = require('cmp_nvim_lsp').default_capabilities()
+
+  if server_name == "lua_ls" then
+    opts.settings = {
+      Lua = {
+        runtime = { version = 'LuaJIT' },
+        diagnostics = { globals = { 'vim' } },
+        workspace = { library = vim.api.nvim_get_runtime_file("", true) },
+        telemetry = { enable = false }
+      }
+    }
+  end
+
   lspconfig[server_name].setup(opts)
 end
 })
