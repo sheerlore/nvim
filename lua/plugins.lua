@@ -19,7 +19,7 @@ return require("packer").startup(function(use)
   -- color theme
   use 'folke/tokyonight.nvim'
   -- icon
-  use { 'nvim-tree/nvim-web-devicons'}
+  use { 'nvim-tree/nvim-web-devicons' }
   -- status line
   use {
     'nvim-lualine/lualine.nvim',
@@ -29,7 +29,7 @@ return require("packer").startup(function(use)
   use {
     'akinsho/bufferline.nvim',
     tag = "*",
-    requires = {'nvim-tree/nvim-web-devicons'},
+    requires = { 'nvim-tree/nvim-web-devicons' },
   }
   -- fuzzy finder
   use {
@@ -38,8 +38,16 @@ return require("packer").startup(function(use)
   }
   use {
     'nvim-telescope/telescope-file-browser.nvim',
-    requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"}
+    requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   }
+  -- treesitter
+  --use {
+  --  'nvim-treesitter/nvim-treesitter',
+  --  run = function()
+  --    local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+  --    ts_update()
+  --  end,
+  -- }
 
   -- lsp & server
   use 'neovim/nvim-lspconfig'

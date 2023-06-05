@@ -29,7 +29,7 @@ vim.opt.smartindent = true
 
 -- 表示
 vim.opt.number = true
-vim.opt.relativenumber = true -- ex) 10j 5yk
+vim.opt.relativenumber = false -- ex) 10j 5yk
 vim.opt.wrap = false
 vim.opt.showtabline = 2
 vim.opt.showmatch = true
