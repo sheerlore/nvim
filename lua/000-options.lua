@@ -33,6 +33,8 @@ vim.opt.relativenumber = false -- ex) 10j 5yk
 vim.opt.wrap = false
 vim.opt.showtabline = 2
 vim.opt.showmatch = true
+vim.opt.list = true
+vim.opt.listchars = "trail:･"
 
 -- インターフェース
 vim.opt.winblend = 20
@@ -48,7 +50,6 @@ vim.opt.smartcase = true
 -- netrw
 vim.g.netrw_banner = 0
 vim.g.netrw_liststyle = 3
-
 
 -- その他
 vim.opt.splitright = true
