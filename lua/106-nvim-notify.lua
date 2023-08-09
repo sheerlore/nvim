@@ -6,7 +6,7 @@ vim.notify = notify
 notify.setup {
   background_colour = "#000000",
   stages = "slide",
-  timeout = 5000,
+  timeout = 3000,
 }
 
 -- When Opening Nvim 
