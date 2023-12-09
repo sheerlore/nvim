@@ -34,7 +34,7 @@ vim.opt.wrap = false
 vim.opt.showtabline = 2
 vim.opt.showmatch = true
 vim.opt.list = true
-vim.opt.listchars = "trail:･"
+vim.opt.listchars = "tab:>-,trail:･"
 
 -- インターフェース
 vim.opt.winblend = 20
